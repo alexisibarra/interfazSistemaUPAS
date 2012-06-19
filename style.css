@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+/* Dummy style */
+
+* {
+   font-family: "LM Sans 12" !important;
+}
+
+div#header h1 a span {
+  display: inline !important;
+}
+
+/* Overwrites defaults */
+
+body, h1, h2, h3, h4, h5, h6, p, ul, form, input {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Global */
+
+* {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#menu{
+	background-color: #ffff00;
+}
+#menu ul{
+	padding-left:360px:
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+#menu li{
+   float:left;
+} 
+
+#menu li a {
+	 font-size:x-small;
+   padding: 2px 7px 2px 7px;
+   color: #666;
+   background-color: #ffff00;
+   text-decoration: none;
+}
+
+#menu li a:link,a:visited{
+	display:block;
+	width:120px;
+	font-weight:bold;
+	color:#000000;
+	background-color:#ffff00;
+	text-align:center;
+	padding:1px;
+	text-decoration:none;
+	text-transform:none;
+} 
+
+#menu li a:hover,a:active
+{
+background-color:#ffd700;
+}
+
+
+#left {
+	 font-family: verdana, arial, helvetica, sans-serif;
+	 font-style:bold;
+	 padding-top:15px;
+	 float:left;
+	 font-size:11pt;
+	 text-align:right;
+   color: #a06e1c;
+   background-color: #ffff00;
+   text-decoration: none;
+}
+
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0.25em;
+}
+
+a {
+  color: #0066FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00CCFF;
+  text-decoration: underline;
+}
+
+p.inline-warning {
+  margin: 0.5em;
+  color: red;
+  font-weight: bold;
+}
+
+form {
+  display: inline;
+}
+
+input {
+  font-size: medium;
+}
+
+input[type="text"] {
+  padding: 0.15em;
+}
+
+input[type="submit"] {
+  padding: 0.15em 0.3em;
+}
+
+table {
+  width: 98%;
+  margin: 0 auto;
+}
+
+tr {
+}
+
+th, td {
+  padding: 0.25em;
+}
+
+th {
+  font-size: large;
+  border-bottom: 2px solid #000;
+}
+
+td {
+}
+
+td.options {
+  text-align: center;
+}
+
+/* Layout */
+
+#wrapper {
+  margin: 0px auto;
+  width: 975px;
+}
+
+div#header,
+div#content,
+div#footer {
+  display: block;
+  width: 975px;
+}
+
+#header {
+	border-top-left-radius: 20px 20px;
+	border-top-right-radius: 20px 20px;
+  height: 105px;
+	background-image:url('./images/imBanner.png');
+  background-color: #CCC;
+}
+
+#header [alt=USB] {
+	float:right;
+}
+
+#header [alt=UPAS] {
+	float:left;
+	padding-left:10px;
+	padding-top:5px;
+}
+
+#header [alt=DEX] {
+	float:left;
+	padding-top:45px;
+}
+
+div#content div#right,
+div#content div#middle,
+div#content div#left {
+  display: block;
+  float: left;
+  min-height: 360px;
+}
+
+div#content div#right,
+div#content div#left {
+  width: 185px;
+  background-color: #FFFFFF;
+}
+
+div#content div#middle {
+  width: 565px; /* 605px - (20px *2) */
+  padding: 15px 20px;
+}
+
+div#footer {
+  float: left;
+  height: 150px;
+  background-color: #CCC;
+}
+
+.hidden {
+  display: none;
+}
