@@ -1,10 +1,18 @@
 @charset "utf-8";
 
-/* Dummy style */
-
 * {
-   font-family: "LM Sans 12" !important;
+	padding:0;
+	margin: 0;
 }
+
+body{
+	background-color: #4c329d;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-image:url('./images/fondo.png'); 
+  background-attachment:fixed;
+}
+
 
 div#header h1 a span {
   display: inline !important;
@@ -21,15 +29,16 @@ body, h1, h2, h3, h4, h5, h6, p, ul, form, input {
 
 * {
   font-family: Verdana, Arial, Helvetica, sans-serif;
+
 }
 #menu{
+	height: 20px;
 	background-color: #ffff00;
 }
 #menu ul{
-	padding-left:360px:
 	list-style-type:none;
 	margin:0;
-	padding:0;
+	padding: 0 10px;
 	overflow:hidden;
 }
 
@@ -38,9 +47,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, form, input {
 } 
 
 #menu li a {
+	 height: 18px;
 	 font-size:x-small;
    padding: 2px 7px 2px 7px;
-   color: #666;
+   color: #000000;
    background-color: #ffff00;
    text-decoration: none;
 }
@@ -62,22 +72,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, form, input {
 background-color:#ffd700;
 }
 
-
-#left {
-	 font-family: verdana, arial, helvetica, sans-serif;
-	 font-style:bold;
-	 padding-top:15px;
-	 float:left;
-	 font-size:11pt;
-	 text-align:right;
-   color: #a06e1c;
-   background-color: #ffff00;
-   text-decoration: none;
-}
-
-
 ul {
-  list-style: none;
 }
 
 p {
@@ -142,66 +137,54 @@ td.options {
 
 /* Layout */
 
-#wrapper {
-  margin: 0px auto;
+#wrap {
+  margin: 10px auto;
   width: 975px;
 }
 
-div#header,
-div#content,
-div#footer {
+#footer {
   display: block;
   width: 975px;
 }
 
 #header {
-	border-top-left-radius: 20px 20px;
-	border-top-right-radius: 20px 20px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius: 10px 10px;
   height: 105px;
 	background-image:url('./images/imBanner.png');
-  background-color: #CCC;
 }
 
-#header [alt=USB] {
-	float:right;
-}
-
-#header [alt=UPAS] {
-	float:left;
-	padding-left:10px;
-	padding-top:5px;
-}
-
-#header [alt=DEX] {
-	float:left;
-	padding-top:45px;
-}
-
-div#content div#right,
 div#content div#middle,
-div#content div#left {
+div#content div#right{
   display: block;
   float: left;
-  min-height: 360px;
+  height: 600px;
+	background-color:#ffffff;
 }
 
 div#content div#right,
 div#content div#left {
-  width: 185px;
+  width: 150px;
   background-color: #FFFFFF;
 }
 
 div#content div#middle {
-  width: 565px; /* 605px - (20px *2) */
+  width: 785px; /* 605px - (20px *2) */
   padding: 15px 20px;
 }
 
 div#footer {
   float: left;
-  height: 150px;
-  background-color: #CCC;
+  height: 80px;
+  background-color: #95bdfb;
+	width: 825px;
+	padding-top:10px;
+	font-size:9px;
 }
 
+#footer p{
+	text-align:center;
+}
 .hidden {
   display: none;
 }
